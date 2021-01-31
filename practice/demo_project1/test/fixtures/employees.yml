@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  birthdate: 2021-01-31
+  gender: false
+  salary: 1
+  qualification: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  birthdate: 2021-01-31
+  gender: false
+  salary: 1
+  qualification: MyString
