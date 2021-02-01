@@ -44,7 +44,7 @@
 
   <div class="field">
     <%= form.label :qualification %>
-    <%= form.collection_select :qualification_id, Qualification.order(:name), :id, :name %>
+    <%= form.text_field :qualification %>
   </div>
 
   <div class="actions">
