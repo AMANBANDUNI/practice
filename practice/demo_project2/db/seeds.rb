@@ -5,4 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-qualifications = Qualification.create([{name: 'Btech'}, {name: 'Bba'}, {name: 'Bca'}, {name: 'Bsc'}, {name: 'B pharma'}])
+qualifications = Qualification.create!([{name: 'Btech'}, {name: 'Bba'}, {name: 'Bca'}, {name: 'Bsc'}, {name: 'B pharma'}])

@@ -25,7 +25,8 @@
         <td><%= employee.gender %></td>
         <td><%= employee.salary %></td>
         <td><%= employee.email %></td>
-        <td><%= employee.qualification %></td>
+        <!-- <td><%= employee.qualification_id %></td> -->
+        <td><%= Qualification.find(employee.qualification_id).name %></td>
         <td><%= link_to 'Show', employee %></td>
         <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
         <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>

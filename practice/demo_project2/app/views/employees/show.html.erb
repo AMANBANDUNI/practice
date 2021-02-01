@@ -32,7 +32,8 @@
 
 <p>
   <strong>Qualification:</strong>
-  <%= @employee.qualification %>
+  <%#= @employee.qualification_id %>
+  <%= Qualification.find(@employee.qualification_id).name %>
 </p>
 
 <%= link_to 'Edit', edit_employee_path(@employee) %> |
