@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Total Employees</h1>
 
 <table>
@@ -17,7 +15,7 @@
   </thead>
 
   <tbody>
-    <% @employees.each do |employee| %>
+    <% current_admin.employees.each do |employee| %>
       <tr>
         <td><%= employee.first_name %></td>
         <td><%= employee.last_name %></td>
@@ -37,4 +35,5 @@
 
 <br>
 
-<%= link_to 'New Employee', new_employee_path %>
+<%= link_to 'New Employee', new_employee_path %><br><br>
+<%= link_to 'home', '/' %>

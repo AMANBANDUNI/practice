@@ -1,0 +1,26 @@
+<h2>Home#Index</h2>
+
+<% if admin_signed_in? %>
+  <h1>Hello <%= current_admin.name %></h1>
+  <h2>Welcome </h2>
+  <ul>
+  	<strong><li>Name: </strong> <%= current_admin.name %> </li>
+  	<strong><li>Phone: </strong> <%= current_admin.phone_number %></li>
+  	<strong><li>address: </strong> <%= current_admin.address %></li>
+  	<strong><li>Email: </strong> <%= current_admin.email %></li>
+  </ul>
+  <%= link_to 'Edit Profile', edit_admin_registration_path %>
+  <br>
+  <%= link_to 'New Employee', new_employee_path %>
+  <br>
+  <%= link_to 'Total Employees', employees_path %>
+  <br>
+  <%= link_to 'Sign out', destroy_admin_session_path, method: :delete %>
+<% else %>
+  <%= link_to 'Sign_in', admin_session_path %>
+  <br>
+  <%= link_to 'Sign_up', new_admin_registration_path %>
+<% end %>
+
+<br><br>
+<%= link_to 'Url Shortener', new_url_path %>
